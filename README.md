@@ -11,7 +11,7 @@
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/getnews | post|token  | 新闻id,title,content,publisher,picture,time
 >picture我定义为新闻列表展示小图
-## 获取新闻接口
+## 获取书籍接口
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/getbooks | post|token  | 图书id,name,author,picture,public,price,information
+|http://www.heimdall2019.club:8081/getbooks | post|token  | 图书id,name,author,picture,public,price,information,link
