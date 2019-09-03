@@ -18,5 +18,16 @@
 ## 获取套题列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/paper/getPaperList | post|token  | 套题paper_id，title_num，paper_title，difficulty，pay，paper_introduce，paper_content，message，paper_type，paper_price，subject_id，author
+|http://www.heimdall2019.club:8081/paper/getPaperList | post|token  | 所有套题的paper_id，title_num，paper_title，difficulty，pay，paper_introduce，paper_content，message，paper_type，paper_price，subject_id，author
 >paper_type可能表示该套题是同步训练题或是模拟训练题，subject_id表示该套题所属于的学科id
+## 根据套题id获取套题内容
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/paper/getPaperList | post|token，paperid  | 套题的paper_id，title_num，paper_title，difficulty，pay，paper_introduce，paper_content，message，paper_type，paper_price，subject_id，author
+>参数示例：
+```
+data{
+  token:'很长',
+  paperid:'20190902220512'
+}
+token:'很长'
