@@ -15,3 +15,7 @@
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/getbooks | post|token  | 图书id,name,author,picture,public,price,information,link
+## 获取套题列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/paper/getPaperList | post|token  | 套题paper_id，title_num，paper_title，difficulty，pay，paper_introduce，paper_content，message，paper_type，paper_price，subject_id
