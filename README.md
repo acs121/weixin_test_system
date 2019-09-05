@@ -67,4 +67,4 @@ data: {
 ## 获取学生已考试的套题列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/getsubject | post|token,student_id  | 已考试套题id：did_paper_id,paper_id,score,paper_name,time
+|http://www.heimdall2019.club:8081/getFinishPaperList | post|token,student_id  | 已考试套题id：did_paper_id,paper_id,score,paper_name,time
