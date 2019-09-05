@@ -43,3 +43,7 @@ data{
   paper_id: '20190902220512'（测试用这个id，或者用你获取到的其他id）
 }
 ```
+## 获取课程列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/getsubject | post|token  | 课程subject_id,subject_name,subject_introduce,paper_list,video_list
