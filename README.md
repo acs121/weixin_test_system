@@ -68,3 +68,7 @@ data: {
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/getFinishPaperList | post|token,student_id  | 已考试套题id：did_paper_id,paper_id,score,paper_name,time
+## 根据已考试套题id获取答题结果
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/getFinishPaper | post|token,did_paper_id  | 已考试套题id：did_paper_id,paper_id,score,paper_name,time,content
