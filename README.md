@@ -60,6 +60,11 @@ data: {
         paper_id: '20190902220512',
         time: '2019-09-05-15:00',
         score: '78',
+        paper_name:'2018年解剖科目试题',
         content: '[{question_id:11111,num:1,select_num:2},{question_id:11112,num:2,select_num:1},{question_id: 11113,num:3,select_num:3}]'
         }
 ```
+## 获取学生已考试的套题列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/getsubject | post|token,student_id  | 已考试套题id：did_paper_id,paper_id,score,paper_name,time
