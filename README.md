@@ -1,6 +1,7 @@
 ## 文档统一说明
 >返回值为state:0,说明出错了。
 >返回值为state:1,token错误或已过期，请重新登录
+>返回值为state:2,操作成功，提示即可
 
 ## 登录接口
 |url |method| 参数 | 返回值
@@ -47,3 +48,18 @@ data{
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/getsubject | post|token  | 课程subject_id,subject_name,subject_introduce,paper_list,video_list
+## 提交考试结果
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/submmitResult | post|token，studen_id,paper_id,score,time,content  | 课程subject_id,subject_name,subject_introduce,paper_list,video_list
+>参数示例：
+```
+data: {
+        token: "很长",
+        student_id: 'o5jvH5btczavYM_f-0STJbAKer-4',
+        paper_id: '20190902220512',
+        time: '2019-09-05-15:00',
+        score: '78',
+        content: '[{question_id:11111,num:1,select_num:2},{question_id:11112,num:2,select_num:1},{question_id: 11113,num:3,select_num:3}]'
+        }
+```
