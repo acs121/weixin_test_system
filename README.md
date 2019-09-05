@@ -64,6 +64,18 @@ data: {
         content: '[{question_id:11111,num:1,select_num:2},{question_id:11112,num:2,select_num:1},{question_id: 11113,num:3,select_num:3}]'
         }
 ```
+## 提交错题id列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/submmitErrorList | post|token，studen_id,wrong_list  | 
+>参数示例：
+```
+data: {
+        token: "很长",
+        student_id: 'o5jvH5btczavYM_f-0STJbAKer-4',
+        wrong_list:'[11111,11112,11113]'
+        }
+```
 ## 获取学生已考试的套题列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
@@ -72,3 +84,4 @@ data: {
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/getFinishPaper | post|token,did_paper_id  | 已考试套题id：did_paper_id,paper_id,score,paper_name,time,content
+
