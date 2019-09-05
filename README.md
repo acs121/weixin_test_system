@@ -1,5 +1,6 @@
 ## 文档统一说明
 >返回值为state:0,说明出错了。
+>返回值为state:1,token错误或已过期，请重新登录
 
 ## 登录接口
 |url |method| 参数 | 返回值
@@ -18,16 +19,16 @@
 ## 获取套题列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/paper/getPaperList | post|token  | 所有套题的paper_id，title_num，paper_title，difficulty，pay，paper_introduce，paper_content，message，paper_type，paper_price，subject_id，author
->paper_type可能表示该套题是同步训练题或是模拟训练题，subject_id表示该套题所属于的学科id
-## 根据套题id获取套题内容
+|http://www.heimdall2019.club:8081/paper/getPaperList | post|token  | 所有套题的paper_id，title_num，paper_title，difficulty，pay，paper_introduce，paper_type，paper_price，subject_id，subject_name,author
+>paper_type可能表示该套题是同步训练题或是模拟训练题(暂时先试着显示其他内容，后面再具体定义它是什么)，subject_id表示该套题所属于的学科id
+## 根据题目id获取小题内容
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/paper/getPaperList | post|token，paperid  | 套题的paper_id，title_num，paper_title，difficulty，pay，paper_introduce，paper_content，message，paper_type，paper_price，subject_id，author
+|http://www.heimdall2019.club:8081/paper/getQuestionContentByQuestionId | post|token，question_id  | 小题的question_id,question_title,content,paper_name，paper_id
 >参数示例：
 ```
 data{
   token:'很长',
-  paperid:'20190902220512'（测试用这个id，或者用你获取到的其他id）
+  question_id: '11111'（测试用这个id，或者用你获取到的其他id）
 }
 ```
