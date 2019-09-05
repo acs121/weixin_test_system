@@ -32,3 +32,14 @@ data{
   question_id: '11111'（测试用这个id，或者用你获取到的其他id）
 }
 ```
+## 根据套题id获取小题id列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/papergetPaperQuestionList | post|token，paper_id  | 套题的paper_content
+>参数示例：
+```
+data{
+  token:'很长',
+  paper_id: '20190902220512'（测试用这个id，或者用你获取到的其他id）
+}
+```
