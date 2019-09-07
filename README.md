@@ -74,7 +74,7 @@ data: {
 data: {
         token: "很长",
         student_id: 'o5jvH5btczavYM_f-0STJbAKer-4',
-        wrong_list:'[11111,11112,11113]'
+        wrong_list:'[{subject_id:20001,question_id:11111},{subject_id:20001,question_id:11112},{subject_id:20001,question_id:11113}]'
         }
 ```
 ## 获取学生已考试的套题列表
