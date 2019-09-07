@@ -17,10 +17,14 @@
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/getbooks | post|token  | 图书id,name,author,picture,public,price,information,link
+## 获取课程列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/getsubject | post|token  | 课程subject_id,subject_name,subject_introduce,paper_list,video_list
 ## 获取套题列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/paper/getPaperList | post|token  | 所有套题的paper_id，title_num，paper_title，difficulty，pay，paper_introduce，paper_type，paper_price，subject_id，subject_name,author
+|http://www.heimdall2019.club:8081/paper/getPaperList | post|token，subject_id  | 所有套题的paper_id，title_num，paper_title，difficulty，pay，paper_introduce，paper_type，paper_price，subject_id，subject_name,author
 >paper_type可能表示该套题是同步训练题或是模拟训练题(暂时先试着显示其他内容，后面再具体定义它是什么)，subject_id表示该套题所属于的学科id
 ## 根据题目id获取小题内容
 |url |method| 参数 | 返回值
@@ -44,10 +48,7 @@ data{
   paper_id: '20190902220512'（测试用这个id，或者用你获取到的其他id）
 }
 ```
-## 获取课程列表
-|url |method| 参数 | 返回值
-|------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/getsubject | post|token  | 课程subject_id,subject_name,subject_introduce,paper_list,video_list
+
 ## 提交考试结果
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
