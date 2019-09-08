@@ -61,6 +61,8 @@ data: {
         paper_id: '20190902220512',
         time: '2019-09-05-15:00',
         score: '78',
+        subject_id:'2001',
+        subject_name:'数据结构',
         paper_name:'2018年解剖科目试题',
         content: '[{question_id:11111,num:1,select_num:2},{question_id:11112,num:2,select_num:1},{question_id: 11113,num:3,select_num:3}]'
         }
