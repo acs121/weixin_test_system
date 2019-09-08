@@ -70,13 +70,15 @@ data: {
 ## 提交错题id列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/submmitErrorList | post|token，studen_id,wrong_list  | 
+|http://www.heimdall2019.club:8081/submmitErrorList | post|token，studen_id,wrong_list,paper_type,subject_id  | 
 >参数示例：
 ```
 data: {
         token: "很长",
         student_id: 'o5jvH5btczavYM_f-0STJbAKer-4',
-        wrong_list:'[{subject_id:20001,question_id:11111,paper_type:1},{subject_id:20001,question_id:11112,paper_type:1},{subject_id:20001,question_id:11113,paper_type:1}]'
+        paper_type:1,
+        subject_id:'20001',
+        wrong_list:'[11111,11112,11113]'
         }
 ```
 ## 获取学生已考试的套题列表
