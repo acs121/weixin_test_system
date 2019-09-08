@@ -92,7 +92,7 @@ data: {
 ## 根据用户id和小题id删除学生错题
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/delWrongQuestionById/delWrongQuestionById | post|token,student_id,question_id  |提示即可
+|http://www.heimdall2019.club:8081/wrongQuestion/delWrongQuestionById | post|token,student_id,question_id  |提示即可
 ## 根据课程id、套题类型、学生id获取错题列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
