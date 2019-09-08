@@ -70,7 +70,7 @@ data: {
 ## 提交错题id列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/submmitErrorList | post|token，studen_id,wrong_list,paper_type,subject_id  | 
+|http://www.heimdall2019.club:8081/submmitErrorList | post|token，studen_id,wrong_list,paper_type,subject_id  | 提示即可
 >参数示例：
 ```
 data: {
@@ -93,3 +93,7 @@ data: {
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/paper/delWrongQuestionById | post|token,student_id,question_id  |提示即可
+## 根据课程id、套题类型、学生id获取错题列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/wrongQuestion/getWrongList | post|token,student_id,subject_id,paper_type  |小题id及对应num
