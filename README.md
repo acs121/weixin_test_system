@@ -97,3 +97,7 @@ data: {
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/wrongQuestion/getWrongList | post|token,student_id,subject_id,paper_type  |小题id及对应num
+## 根据学生id修改学生用户名
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/personal/updateUsername | post|token,student_id,username |小题id及对应num
