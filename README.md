@@ -40,7 +40,7 @@ data{
 ## 根据套题id获取小题id列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/papergetPaperQuestionList | post|token，paper_id  | 套题的paper_content
+|http://www.heimdall2019.club:8081/paper/papergetPaperQuestionList | post|token，paper_id  | 套题的paper_content
 >参数示例：
 ```
 data{
@@ -52,7 +52,7 @@ data{
 ## 提交考试结果
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/submmitResult | post|token，studen_id,paper_id,score,time,content  | 课程subject_id,subject_name,subject_introduce,paper_list,video_list
+|http://www.heimdall2019.club:8081/paper/submmitResult | post|token，studen_id,paper_id,score,time,content  | 课程subject_id,subject_name,subject_introduce,paper_list,video_list
 >参数示例：
 ```
 data: {
@@ -70,7 +70,7 @@ data: {
 ## 提交错题id列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/submmitErrorList | post|token，studen_id,wrong_list,paper_type,subject_id  | 提示即可
+|http://www.heimdall2019.club:8081/paper/submmitErrorList | post|token，studen_id,wrong_list,paper_type,subject_id  | 提示即可
 >参数示例：
 ```
 data: {
