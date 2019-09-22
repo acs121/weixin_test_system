@@ -106,3 +106,7 @@ data: {
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/video/getVideoList | post|token,student_id |视频的一些相关信息
 >这里的url是教师端的相对路径，访问时在url前面加上http://www.heimdall2019.club:8083
+## 获取学生用户名
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/personal/getStudentInfo | post|token,student_id |username
