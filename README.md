@@ -114,3 +114,7 @@ data: {
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/paper/isFinishedPaper | post|token,student_id,paper_id |state：2表示没有做，state：-1表示已经做了
+## 获取热书列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/video/getHotBookList | post|token |书籍列表
