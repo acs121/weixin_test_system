@@ -118,3 +118,13 @@ data: {
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/video/getHotBookList | post|token |书籍列表
+## 获取留言列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|https://www.heimdall2019.club:8081/leaveWord/getLeaveWordList | post|token,object_id |留言列表
+>object_id指视频id或者套题id
+## 学生留言
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|https://www.heimdall2019.club:8081/leaveWord/studentLeaveWord | post|token,object_id,student_id,student_name,student_content, |留言列表
+>student_content表示留言内容
