@@ -25,4 +25,13 @@
 ## 创建订单
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/order/createOrder | post|token,student_id,student_name,order_name,order_price,picture  | 课程id列表
+|http://www.heimdall2019.club:8081/order/createOrder | post|token,student_id,student_name,order_name,order_price,picture  | 提示即可
+order_name即课程的名字，图片也是
+## 改变订单支付状态
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/order/changeOrderPay | post|token,student_id,order_id  | 提示即可
+## 改变订单支付状态
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/order/getOrderList | post|token,student_id  | 订单列表信息
