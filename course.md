@@ -5,7 +5,7 @@
 ## 获取课程列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/course/getCourseList | post|token  | 课程信息
+|http://www.heimdall2019.club:8081/course/getCourseList | post|token,subject_id  | 课程信息
 ## 根据课程id获取视频列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
