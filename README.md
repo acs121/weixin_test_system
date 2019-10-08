@@ -12,6 +12,10 @@
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/news/getHomeNewsList | post|token  | 新闻id,title,content,publisher,picture,time
+## 根据新闻id获取新闻图片
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/news/getNewsPic | post|token,news_id  | 新闻id,title,content,publisher,picture,time
 ## 获取主页两条新闻接口无图片
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
