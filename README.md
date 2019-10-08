@@ -17,10 +17,10 @@
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/news/getNewsById | post|token,news_id  | 新闻id,title,content,publisher,picture,time
 >picture我定义为新闻列表展示小图
-## 根据新闻id获取新闻
+## 获取新闻列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/news/getNewsList | post|token,news_id  | 新闻id,title,content,publisher,picture,time
+|http://www.heimdall2019.club:8081/news/getNewsList | post|token  | 新闻id,title,content,publisher,picture,time
 ## 获取书籍接口
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
