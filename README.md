@@ -12,7 +12,15 @@
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/news/getHomeNewsList | post|token  | 新闻id,title,content,publisher,picture,time
+## 获取主页两条新闻接口无图片
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/news/getHomeNewsListNoPic | post|token  | 新闻id,title,content,publisher,picture,time
 ## 根据新闻id获取新闻
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/news/getNewsById | post|token,news_id  | 新闻id,title,content,publisher,picture,time
+## 根据新闻id获取新闻无图片
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/news/getNewsById | post|token,news_id  | 新闻id,title,content,publisher,picture,time
@@ -21,6 +29,14 @@
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/news/getNewsList | post|token  | 新闻id,title,content,publisher,picture,time
+## 获取新闻列表无图片
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/news/getNewsListNoPic | post|token  | 新闻id,title,content,publisher,picture,time
+## 根据新闻id获取图片
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/news/getNewsPic | post|token，news_id  | 新闻id,title,content,publisher,picture,time
 ## 获取书籍接口
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
