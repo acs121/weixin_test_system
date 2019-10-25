@@ -35,3 +35,23 @@ order_name即课程的名字，图片也是
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
 |http://www.heimdall2019.club:8081/order/getOrderList | post|token,student_id  | 订单列表信息
+## 根据科目id获取练习题数目
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/practise/getSubjectNumber | post|token,subject_id  | 题目数量
+## 根据科目id章节列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/practise/getChapterList | post|token,subject_id  | 章节列表
+## 根据章节id获取题目数量
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/practise/getChapteNumber | post|token,chapter_id  | 题目数量
+## 根据章节id获取练习题id列表
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/practise/getPractiseList | post|token,chapter_id  | 题目id列表
+## 根据练习题id获取练习题内容
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|http://www.heimdall2019.club:8081/practise/getPractiseContent | post|token,practise_id  | 题目内容
