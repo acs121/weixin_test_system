@@ -128,7 +128,7 @@ data: {
 ## 根据学生id修改学生用户名
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
-|http://www.heimdall2019.club:8081/personal/updateUsername | post|token,student_id,username |小题id及对应num
+|http://www.heimdall2019.club:8081/personal/updateUsername | post|token,student_id,username |返回成修改功
 ## 根据课程id获取视频列表
 |url |method| 参数 | 返回值
 |------------ | -------------| ------------- | ------------
@@ -156,3 +156,7 @@ data: {
 |------------ | -------------| ------------- | ------------
 |https://www.heimdall2019.club:8081/leaveWord/studentLeaveWord | post|token,object_id,student_id,student_name,student_content, |留言列表
 >student_content表示留言内容
+## 获取学生信息
+|url |method| 参数 | 返回值
+|------------ | -------------| ------------- | ------------
+|https://www.heimdall2019.club:8081/personal/getStudentInfo | post|token,student_id |学生信息
